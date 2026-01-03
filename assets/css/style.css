@@ -1,257 +1,139 @@
-/*RESET GENERAL*/
+/* RESET GENERAL */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* NAV */
+/*HEADER / NAVBAR */
 
 header {
-    background-color: #111; 
-    padding: 10px 0;
+  background-color: #111;
 }
-
-.menu {
-    padding: 0 30px;
-    white-space: nowrap;
-}
-
-/* LOGO */
 
 .logo {
-    width: 110px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 50px;
+  height: 45px;
 }
 
-/* LISTA DEL MENU */
-
-.menu ul {
-    list-style: none;
-    display: inline-block;
-    vertical-align: middle;
+.navbar-nav .nav-link {
+  color: #f2f2f2;
+  font-weight: 500;
 }
 
-.menu li {
-    display: inline-block;
-    margin-right: 25px;
+.navbar-nav .nav-link:hover {
+  color: #d4a657;
 }
 
-.menu a {
-    text-decoration: none;
-    color: #f2f2f2;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.menu a:hover {
-    color: #d4a657; 
-}
-
-/* BOTÓN LOGIN Y SINGUP */
-
-.btn-login {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 40px;
-    background-color: #d4a657;
-    color: #111;
-    padding: 8px 15px;
-    border-radius: 6px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.btn-login:hover {
-    background-color: #b48946;
-    color: white;
-}
-
+.btn-login,
 .btn-singup {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 40px;
-    background-color: #d4a657;
-    color: #111;
-    padding: 8px 15px;
-    border-radius: 6px;
-    font-weight: bold;
-    text-decoration: none;
+  background-color: #d4a657;
+  color: #111;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
+.btn-login:hover,
 .btn-singup:hover {
-    background-color: #b48946;
-    color: white;
+  background-color: #b48946;
+  color: #fff;
 }
 
 /* BANNER */
 
 .banner {
-    height: 700px;      
-    overflow: hidden;   
+  max-height: 700px;
+  overflow: hidden;
 }
-
 
 .banner img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
 }
 
-/* PRODUCTOS */
+/* TITULOS */
 
-h1, h2 {
-    color: #111;
-    text-align: center;
-    margin: 40px 0 20px;
-    font-weight: bold;
-}
-
-/* PRODUCTOS */
-
-.productos {
-    text-align: center;
-    background-color: #222;
-    padding: 30px 0 40px;
-}
-
-.productos div {
-    display: inline-block;
-    margin: 15px;
-    text-align: center;
-}
-
-.productos img {
-    width: 300px;
-    border-radius: 10px;
-    border: 2px solid #d4a657;
+h1,
+h2 {
+  color: #111;
+  text-align: center;
+  margin: 40px 0 20px;
+  font-weight: bold;
 }
 
 h3 {
-    color: #d4a657;
-    margin-top: 10px;
-    font-size: 18px;
+  color: #d4a657;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* PRODUCTOS */
+
+
+.productos {
+  background-color: #222;
+  padding: 40px 0;
+}
+
+.producto img {
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid #d4a657;
+  margin: 0 auto;
+  display: block;
 }
 
 /* NOSOTROS */
 
 .nosotros {
-    text-align: center;
-    margin: 40px 0 60px;
+  margin: 50px 0;
 }
 
 .img-nosotros {
-    width: 500px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 25px;
-    border-radius: 10px;
-    border: 2px solid #d4a657;
-}
-
-.text-nosotros {
-    width: 45%;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 100px;
+  border-radius: 10px;
+  border: 2px solid #d4a657;
 }
 
 .text-nosotros p {
-    margin-bottom: 15px;
-    line-height: 1.5;
-    text-align: justify;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+/* CONTACTO */
+
+.text-contacto {
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 6px;
 }
 
 /* FOOTER */
 
 footer {
-    background-color: #111;
-    text-align: center;
-    padding: 25px 0;
-    margin-top: 60px;
+  background-color: #111;
 }
 
 .redes-logo {
-    width: 30px;
-    margin: 0 12px;
-    vertical-align: middle;  
+  width: 30px;
+  margin: 0 10px;
 }
 
 .text-footer {
-    color: #d4a657;
-    margin-top: 10px;
-    font-size: 14px;
+  color: #d4a657;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-/* PRODUCTOS VISTA */
-
-/* TITULOS */
-h1 {
-    text-align: center;
-    margin: 40px 0;
-}
-
-/* PRODUCTOS */
-
-
-.producto {
-    text-align: center;
-}
-
-.producto img {
-    display: block;
-    margin: 0 auto;
-}
-
-/* CONTACTO */
-
-form {
-    width: 50%;
-    margin: 20px auto;  
-}
-
-form label {
-    display: block;     
-    margin-top: 10px;
-}
-
-form input,
-form select,
-form textarea {
-    width: 100%;         
-}
-
-form textarea {
-    height: 100px;
-}
-
-form button {
-    margin-top: 15px;
-    margin-bottom: 250px;
-    display: block;
-}
-
-.text-contacto{
-    text-align: center;
-}
-
-/* AJUSTES BOOTSTRAP */
-
-.card {
-    border: none;
-    background-color: transparent;
-}
-
-.form-control {
-    border-radius: 6px;
-}
+/* AJUSTES GENERALES */
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
-
 
 

@@ -1,79 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- CSS link -->
-     <link rel="stylesheet" href="../assets/css/style.css">
-<!-- BOOTSTRAP link -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Origen Belleza | Productos</title>
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Origen Belleza | Contacto</title>
 </head>
 <body>
-</head>
-<body> 
 
-<!-- ENCABEZADO -->
-    <header class="bg-dark">
-        <nav class="menu container d-flex align-items-center justify-content-between">
-            <img src="../assets/img/logo.png" alt="Logo Origen Belleza" class="logo">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-            
-         <a href="#" class="btn-login">Iniciar Sesión</a>
-         <a href="#" class="btn-singup">Registro</a>
-        </nav>
-    </header>
+<!-- HEADER -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/img/logo.png" alt="Origen Belleza" class="logo">
+      </a>
+
+      <!-- Hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-outline-light btn-sm">Iniciar Sesión</a>
+          <a href="#" class="btn btn-light btn-sm">Registro</a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</header>
 
 <!-- FORMULARIO CONTACTO -->
-    <main class="container my-4">
-        <section>
-            <h1>Contacto</h1>
-            <p class="text-contacto">Para contactarte con nosotros, puedes rellenar este formulario.</p>
-            <div>
-                <form action="" method="post" class="mt-3">
+<main class="container my-5">
+    <section class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <h1 class="mb-3 text-center">Contacto</h1>
+            <p class="text-center mb-4">
+                Para contactarte con nosotros, puedes rellenar este formulario.
+            </p>
 
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" class="form-control mb-3">
+            <form method="post">
+                <label class="form-label" for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="form-control mb-3">
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form-control mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control mb-3">
 
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" class="form-control mb-3">
+                <label class="form-label" for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" class="form-control mb-3">
 
-                    <label for="motivo">Motivo de tu contacto</label>
-                    <select name="" id="motivo" name="motivo" required class="form-control mb-3">
-                        <option value="" disabled selected>Selecciona una opción</option>
-                        <option value="consulta">Consultar sobre un producto</option>
-                        <option value="felicitaciones">Felicitaciones</option>
-                        <option value="trabajo">Trabajar con nosotros</option>
-                    </select>
+                <label class="form-label" for="motivo">Motivo de tu contacto</label>
+                <select id="motivo" name="motivo" class="form-select mb-3" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="consulta">Consultar sobre un producto</option>
+                    <option value="felicitaciones">Felicitaciones</option>
+                    <option value="trabajo">Trabajar con nosotros</option>
+                </select>
 
-                    <label for="mensaje">¿Quieres agregar algo mas?. Escribe aquí tu mensaje</label>
-                    <textarea name="mensaje" id="mensaje" class="form-control mb-3"></textarea>
+                <label class="form-label" for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" class="form-control mb-4" rows="4"></textarea>
 
-                    <button class="btn btn-dark">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </main>
+                <button class="btn btn-dark w-100">Enviar</button>
+            </form>
+        </div>
+    </section>
+</main>
 
 <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center p-3 mt-4">
-        <div>
-            <img src="../assets/img/facebook.png" alt="Facebook" class="redes-logo">
-            <img src="../assets/img/instagram.png" alt="instagram" class="redes-logo">
-            <p class="text-footer">© 2025 Origen Belleza | Todos los derechos reservados</p>
-        </div>
-    </footer>
-    
+<footer class="bg-dark text-white text-center py-4">
+    <img src="../assets/img/facebook.png" alt="Facebook" class="redes-logo me-2">
+    <img src="../assets/img/instagram.png" alt="Instagram" class="redes-logo">
+    <p class="mt-3 mb-0">© 2025 Origen Belleza | Todos los derechos reservados</p>
+</footer>
 
-<!-- Scripts de Bootstrap -->   
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

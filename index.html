@@ -13,25 +13,48 @@
 <body>
 
 <!-- HEADER -->
-    <header class="bg-dark">
-        <nav class="menu container d-flex align-items-center justify-content-between">
-            <img src="./assets/img/logo.png" alt="Logo Origen Belleza" class="logo">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-            
-         <a href="#" class="btn-login">Iniciar Sesión</a>
-         <a href="#" class="btn-singup">Registro</a>
-        </nav>
-    </header>
+<!-- HEADER -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/img/logo.png" alt="Origen Belleza" class="logo">
+      </a>
+
+      <!-- Hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-outline-light btn-sm">Iniciar Sesión</a>
+          <a href="#" class="btn btn-light btn-sm">Registro</a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</header>
 
 <!-- CONTENIDO PRINCIPAL -->
-    <main class="container my-4">
-        <section class="banner mb-4">
+<main class="container my-4">
+    <section class="banner mb-4">
         <img src="./assets/img/banner.jpg" alt="Banner Origen Belleza" class="img-fluid w-100">
-        </section>
+    </section>
         <section>
             <h1>Productos Populares</h1>
             <div class="row productos">
@@ -49,29 +72,30 @@
                 </div>
             </div>
         </section>
-        <section>
+        
 
 <!-- NOSOTROS -->
-            <h2>Nosotros</h2>
-            <div class="nosotros row align-items-center">
-                <img src="./assets/img/nosotros.jpg" alt="Nuestro equipo" class="img-nosotros img-fluid col-md-6">
+<h2>Nosotros</h2>
+<section>
+    <div class="nosotros row align-items-center">
+        <img src="./assets/img/nosotros.jpg" alt="Nuestro equipo" class="img-nosotros img-fluid col-12 col-md-6">
             <div class="text-nosotros">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga possimus earum tempora modi! Assumenda, sapiente est fugit eius deserunt sequi vitae delectus ipsa nam beatae incidunt deleniti quibusdam, rem culpa</p>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sed nulla officiis odio nihil laboriosam quidem suscipit a nisi. Placeat pariatur perspiciatis aut, consectetur quos illum doloremque odio vero ipsam</p>
             </div>
-            </div>
-        </section>     
-    </main>
+    </div>  
+</section>   
+</main>
 
 <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center p-3 mt-4">
-        <div>
-            <img src="./assets/img/facebook.png" alt="Facebook" class="redes-logo">
-            <img src="./assets/img/instagram.png" alt="instagram" class="redes-logo">
-            <p class="text-footer">© 2025 Origen Belleza | Todos los derechos reservados</p>
-        </div>
-    </footer>
+<footer class="bg-dark text-white text-center p-3 mt-4">
+    <div>
+        <img src="./assets/img/facebook.png" alt="Facebook" class="redes-logo">
+        <img src="./assets/img/instagram.png" alt="instagram" class="redes-logo">
+        <p class="text-footer">© 2025 Origen Belleza | Todos los derechos reservados</p>
+    </div>
+</footer>
     
 
 <!-- Scripts Bootstrap -->   
