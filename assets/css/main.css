@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +37,22 @@ h3 {
 .banner img {
   width: 100%;
   height: auto;
+}
+
+/* ANIMACION */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animación banner */
+.banner {
+  animation: fadeSlideUp 0.8s ease-out both;
 }
 
 header {
