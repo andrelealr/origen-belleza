@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as v;
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: v.$dark;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2 {
+  color: v.$dark;
+  text-align: center;
+  margin: 40px 0 20px;
+  font-weight: bold;
+}
+
+h3 {
+  color: v.$gold;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Banner */
+.banner {
+  max-height: 700px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+

@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.productos {
+  background-color: v.$gray-900;
+  padding: 40px 0;
+}
+
+.producto img {
+  width: 300px;
+  border-radius: v.$radius;
+  border: 2px solid v.$gold;
+  margin: 0 auto;
+  display: block;
+  @include m.hover-lift;
+}

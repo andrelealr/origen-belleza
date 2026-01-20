@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as v;
+
+footer {
+  background-color: v.$dark;
+}
+
+.redes-logo {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.text-footer {
+  color: v.$gold;
+  font-size: 14px;
+  margin-top: 10px;
+}

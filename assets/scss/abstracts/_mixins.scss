@@ -1,0 +1,4 @@
+@mixin hover-lift {
+  transition: transform .2s ease, filter .2s ease;
+  &:hover { transform: translateY(-4px); filter: brightness(1.05); }
+}

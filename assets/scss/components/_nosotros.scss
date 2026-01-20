@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as v;
+
+.nosotros {
+  margin: 50px 0;
+}
+
+.img-nosotros {
+  border-radius: v.$radius;
+  border: 2px solid v.$gold;
+}
+
+.text-nosotros {
+  p {
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+}

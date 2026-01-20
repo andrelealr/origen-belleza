@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as v;
+
+header {
+  background-color: v.$dark;
+
+  .logo {
+    height: 45px;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: #f2f2f2;
+      font-weight: 500;
+
+      &:hover { color: v.$gold; }
+      &.active { color: v.$gold; }
+    }
+  }
+}
