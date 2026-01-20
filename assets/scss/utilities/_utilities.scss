@@ -1,0 +1,6 @@
+$spaces: (0, 8, 16, 24, 32);
+
+@each $s in $spaces {
+  .gap-#{$s} { gap: #{$s}px; }
+  .py-#{$s} { padding-top: #{$s}px; padding-bottom: #{$s}px; }
+}
