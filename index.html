@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Origen Belleza SpA: productos profesionales de barbería y cuidado personal. Máquinas, recortadoras y kits para uso profesional y doméstico.">
 <!-- BOOTSTRAP link -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- CSS link -->
     <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
     <link rel="stylesheet" href="./assets/css/main.css">
-
-    <title>Origen Belleza</title>
+    
+    <title>Origen Belleza | Productos profesionales de barberíaza</title>
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Navegación principal">
     <div class="container">
 
       <a class="navbar-brand" href="./index.html">
@@ -24,7 +24,14 @@
       </a>
 
       <!-- Hamburguesa -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#menuNav"
+        aria-controls="menuNav"
+        aria-expanded="false"
+        aria-label="Abrir menú de navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -59,12 +66,12 @@
 
 
 <!-- CONTENIDO PRINCIPAL -->
-<main class="container my-4">
+<main class="container my-4" role="main">
     <section class="banner mb-4">
         <img src="./assets/img/banner.jpg" alt="Banner Origen Belleza" class="img-fluid w-100">
     </section>
-        <section>
-            <h1>Productos Populares</h1>
+      <section aria-labelledby="productos-populares">
+          <h1 id="productos-populares">Productos Populares</h1>
             <div class="row productos">
                 <div class="col-12 col-md-4 text-center mb-3">
                     <img src="./assets/img/jrl_onyx.webp" alt="Máquina de barbería JRL Onyx">
@@ -83,11 +90,11 @@
         
 
 <!-- NOSOTROS -->
-<h2>Nosotros</h2>
-<section>
+<section aria-labelledby="nosotros">
+  <h2 id="nosotros">Nosotros</h2>
     <div class="nosotros row align-items-center">
         <img src="./assets/img/nosotros.jpg" alt="Nuestro equipo" class="img-nosotros img-fluid col-12 col-md-6">
-            <div class="text-nosotros">
+            <div class="text-nosotros col-12 col-md-6">
                 <p>
                   En Origen Belleza nos especializamos en productos de barbería y cuidado personal.
                   Trabajamos con máquinas, recortadoras y kits pensados para uso profesional y doméstico.
@@ -103,10 +110,10 @@
 </main>
 
 <!-- FOOTER -->
-<footer class="bg-dark text-white text-center p-3 mt-4">
+<footer class="bg-dark text-white text-center p-3 mt-4" role="contentinfo">
     <div>
-        <img src="./assets/img/facebook.png" alt="Facebook" class="redes-logo">
-        <img src="./assets/img/instagram.png" alt="instagram" class="redes-logo">
+        <img src="./assets/img/facebook.png" alt="Facebook Origen Belleza" class="redes-logo">
+        <img src="./assets/img/instagram.png" alt="Instagram Origen Belleza" class="redes-logo">
         <p class="text-footer">© 2025 Origen Belleza | Todos los derechos reservados</p>
     </div>
 </footer>
